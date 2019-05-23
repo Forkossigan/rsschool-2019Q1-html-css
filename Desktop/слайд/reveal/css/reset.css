@@ -1,0 +1,147 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v4.0 | 20180602
+   License: none (public domain)
+*/
+
+html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block;
+}
+span{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  color: red;
+}
+.question p{
+  font-size: 70%;
+}
+.question span{
+  color: green;
+  font-size: 110%;
+}
+.question{
+  text-align: left;
+}
+#question-11 p{
+  position: absolute;
+  vertical-align:top;
+  margin: 0 60px 500px 0;
+  top: 0px;
+  text-align: left;
+}
+#question-11 div{
+  text-align: left;
+  position: relative;
+  text-align: left;
+  margin: 0 60px 500px 0;
+  top: 100px;
+  width: 1100px;
+}
+#wrepper{
+  background-image: url(../src/Electron.png);
+  background-position: center;
+  width: 1200px;
+  background-repeat: no-repeat;
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.question img{
+  position: absolute;
+  left:700px;
+  bottom: 115px;
+  border-radius: 400px;
+}
+#question-12 p{
+  position: absolute;
+  vertical-align:top;
+  margin: 0 60px 500px 0;
+  top: 0px;
+  text-align: left;
+}
+#question-12 div{
+  text-align: left;
+  position: relative;
+  text-align: left;
+  margin: 0 60px 500px 0;
+  top: 100px;
+  width: 1100px;
+  font-size: 90%;
+}
+#question-2 p{
+  position: absolute;
+  vertical-align:top;
+  margin: 0 60px 500px 0;
+  top: 0px;
+  text-align: left;
+}
+#question-2 div{
+  text-align: left;
+  position: relative;
+  text-align: left;
+  margin: 0 60px 500px 0;
+  top: 100px;
+  width: 1100px;
+  font-size: 90%;
+}
+#question-21 p{
+  position: absolute;
+  vertical-align:top;
+  margin: 0 60px 500px 0;
+  top: 0px;
+  text-align: left;
+}
+#question-21 div{
+  text-align: left;
+  position: relative;
+  text-align: left;
+  margin: 0 60px 500px 0;
+  top: 100px;
+  width: 1100px;
+  font-size: 80%;
+}
+#Advantages{
+  display: flex;
+  justify-content: space-around;
+  font-size: 50%;
+}
+#Advantages p{
+  position: absolute;
+  vertical-align:top;
+  margin: 0 60px 500px 0;
+  top: 0px;
+  
+}
+.content{
+  position: static;
+  font-size: 50%;
+}
+#end{
+  font-size: 300%;
+}

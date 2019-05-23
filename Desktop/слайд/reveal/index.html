@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<section id='wrepper'>
+					<h1><span>Electron</span> - what is it?</h1>
+					<p>Autor - Andrew Bakalov</p>
+					<p>Time - 10 minutes</p>
+				</section>
+				<section class='question'>
+					<h2>Main content of presentation:</h2>
+					<p>-Introductory part</p>
+					<p><span>-Question 1: Introduction to Electron</span><br>
+						1.1 Short description<br>
+						1.2 History of creation
+					</p>
+					<p><span>-Question 2: Main information</span></p>
+					<p><span>-Question 3: Main advantages and disadvantages</span><br>
+						3.1 Advantages<br>
+						3.2 Disadvantages
+					</p>
+					<p><span>-Conclusion and questions</span></p>
+					<img src="src/electron (1).png" alt="el" width="500px" height="500px">
+				</section>
+			</section>
+			<section>
+				<section class='introduce'>
+					<p><span>Introductory part</span></p>
+					<p> It isn`t obligatory part of the presentation, however here we will find out what is Electron. At
+						the end will be funny surprise. </p>
+				</section>
+				<section>
+					<img src='src/kitten.jpg' width="1000px" height="600px">
+				</section>
+			</section>
+			<section>
+
+				<section id='question-11'>
+					<p><span>-Question 1: Introduction to Electron</span><br>
+						1.1 Short description<br>
+					</p>
+					<div>Electron is an open source library developed by GitHub for building cross-platform desktop
+						applications with HTML, CSS, and JavaScript. Electron accomplishes this by combining Chromium
+						and Node.js into a single runtime and apps can be packaged for Mac, Windows, and Linux.
+					</div>
+				</section>
+
+				<section id='question-12'>
+					<p><span>-Question 1: Introduction to Electron</span><br>
+						1.2 History of creation<br>
+					</p>
+					<div>Electron began in 2013 as the framework on which Atom, GitHub's hackable text editor, would be
+						built. The two were open sourced in the Spring of 2014.
+
+						It has since become a popular tool used by open source developers, startups, and established
+						companies.<br>
+						Below are milestones in Electron's history:<br>
+						-April 2013: Atom Shell is started <br>
+						-May 2014: Atom Shell is open sourced<br>
+						-April 2015: Atom Shell is re-named Electron<br>
+						-May 2016: Electron releases v1.0.0<br>
+						-May 2016: Electron apps compatible with Mac App Store <br>
+						-August 2016: Windows Store support for Electron apps
+
+					</div>
+				</section>
+			</section>
+			<section>
+				<section id='question-2'>
+					<p><span>-Question 2: Main information</span></p>
+					<div>
+						<h3>
+							Main and Renderer Processes
+						</h3>
+						In Electron, the process that runs package.json's main script is called the main process.
+						The script that runs in the main process can display a GUI by creating web pages. An Electron
+						app always has one main process, but never more.
+
+						Since Electron uses Chromium for displaying web pages, Chromium's multi-process architecture is
+						also used. Each web page in Electron runs in its own process, which is called the renderer
+						process.
+
+						In normal browsers, web pages usually run in a sandboxed environment and are not allowed access
+						to native resources. Electron users, however, have the power to use Node.js APIs in web pages
+						allowing lower level operating system interactions.
+					</div>
+				</section>
+				<section>
+					<img src="src/electrondiagram-large-opt.png" alt="" height="700px">
+				</section>
+				<section id='question-21'>
+					<p><span>-Question 2: Main information</span></p>
+					<div>
+						<h3>
+							Differences Between Main Process and Renderer Process
+
+						</h3>
+						The main process creates web pages by creating BrowserWindow instances. Each BrowserWindow
+						instance runs the web page in its own renderer process. When a BrowserWindow instance is
+						destroyed, the corresponding renderer process is also terminated.
+
+						The main process manages all web pages and their corresponding renderer processes. Each renderer
+						process is isolated and only cares about the web page running in it.
+
+						In web pages, calling native GUI related APIs is not allowed because managing native GUI
+						resources in web pages is very dangerous and it is easy to leak resources. If you want to
+						perform GUI operations in a web page, the renderer process of the web page must communicate with
+						the main process to request that the main process perform those operations.
+					</div>
+				</section>
+			</section>
+			<section>
+				<section>
+					<p><span>-Question 3: Main advantages and disadvantages</span><br>
+						3.1 Advantages<br>
+						<div id='Advantages'>
+							<div><img src="src/web-tech.svg" alt="" width="130px" height="130px">
+								<h4>Web Technologies</h4>
+								<h5 class='content'>Electron uses Chromium and Node.js so you can<br>
+									build your app with HTML, CSS, and
+									JavaScript.</h5>
+							</div>
+							<div><img src="src/open-source.svg" alt="" width="130px" height="130px">
+								<h4>Open Source</h4>
+								<h5 class='content'>Electron is an open source project maintained <br>by GitHub and an
+									active community of contributors.
+								</h5>
+							</div>
+							<div><img src="src/cross-platform.svg" alt="" width="130px" height="130px">
+								<h4>Cross Platform</h4>
+								<h5 class='content'>Compatible with Mac, Windows, and Linux, Electron <br>
+									apps build and run on three platforms.
+									</h5>
+							</div>
+						</div>
+				</section>
+				<section>
+					<p><span>-Question 3: Main advantages and disadvantages</span><br>
+						3.2 Disadvantages
+				</section>
+			</section>
+			<section>
+				<section id='end'>
+<h3>Thanks for attantion!<br> And...</h3>
+				</section>
+				<section>
+					<img src="src/heppy-pappy.jpg" alt="el" width="1000px" height="563px">
+				</section>
+			</section>
+		</div>
+	</div>
+
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true }
+			]
+		});
+	</script>
+</body>
+
+</html>
